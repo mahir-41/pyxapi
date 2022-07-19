@@ -11,15 +11,15 @@ app = FastAPI()
 async def test():
     return {"message": "Test successful"}
 
-@app.get("/pixelate", response_class=FileResponse)
+@app.get("/pixelate")
 async def pixelate():
     image = Image.open('image_name.jpg')
-    new_image = image.resize((100, 100))
+    new_image = image.resize((70, 70))
     new_image.save('image_name.png')
 
     image = io.imread("image_name.png") 
 
-    new_image = Pyx(palette=10, dither ="none", alpha=.6).fit_transform(image)
+    new_image = Pyx(palette=20, dither ="none", alpha=.6).fit_transform(image)
 
     io.imsave("pixel.png", new_image)
 
