@@ -18,7 +18,7 @@ async def pixelate(url):
         handler.write(img_data)
 
     image = Image.open('image_name.jpg')
-    new_image = image.resize((50, 50))
+    new_image = image.resize((100, 100))
     new_image.save('image_name.png')
 
     image = io.imread("image_name.png") 
