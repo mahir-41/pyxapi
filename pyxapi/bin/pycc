@@ -1,0 +1,3 @@
+#!/Users/mahir/Documents/Code/pyxapi/pyxapi/bin/python3
+from numba.pycc import main
+main()

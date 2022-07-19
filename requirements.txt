@@ -1,0 +1,6 @@
+scikit-learn==1.1.1
+scikit-image==0.19.3
+numba==0.55.2
+fastapi==0.79.0
+gunicorn==20.1.0
+git+https://github.com/sedthh/pyxelate.git@2.0.2
