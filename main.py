@@ -1,6 +1,6 @@
 from pyxelate import Pyx
 from skimage import io
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Response
 from fastapi.responses import FileResponse
 from PIL import Image
 import requests
