@@ -9,12 +9,14 @@ app = FastAPI()
 
 @app.get("/test")
 async def test():
+    response.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
     return {"message": "Test successful"}
 
 @app.get("/pixelate")
 async def pixelate():
+    response.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
     image = Image.open('image_name.jpg')
-    new_image = image.resize((70, 70))
+    new_image = image.resize((50, 50))
     new_image.save('image_name.png')
 
     image = io.imread("image_name.png") 
@@ -27,6 +29,7 @@ async def pixelate():
 
 @app.post("/uploadfile/")
 async def create_upload_file(file: UploadFile):
+    response.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
     contents = await file.read()
     with open('image_name.jpg', 'wb') as handler:
         handler.write(contents)
