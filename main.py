@@ -26,5 +26,8 @@ async def pixelate(url):
     new_image = Pyx(palette=20, dither ="none", alpha=.6).fit_transform(image)
 
     io.imsave("pixel.png", new_image)
+    return "OK"
 
+@app.get("/getImage")
+async def getImage():
     return FileResponse("pixel.png")
