@@ -38,7 +38,11 @@ async def pixelate(url):
 
     new_image = Pyx(palette=20, dither ="none", alpha=.6).fit_transform(image)
 
-    io.imsave("pixel.png", new_image)
+    io.imsave("raw.png", new_image)
+    image = Image.open('raw.png')
+    new_image = image.resize((200, 200), resample=Image.NEAREST)
+
+    new_image.save("pixel.png", quality = 50)
     return "OK"
 
 @app.get("/getImage")
