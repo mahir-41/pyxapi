@@ -1,5 +1,6 @@
 fastapi
 uvicorn
+gunicorn
 requests
 numpy
 pyxelate @ git+https://github.com/sedthh/pyxelate.git@ae2de9249d11063d0c1563b8e30a634c7d07faf8
