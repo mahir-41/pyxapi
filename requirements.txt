@@ -10,7 +10,7 @@ imageio==2.26.0
 joblib==1.2.0
 lazy_loader==0.1
 llvmlite==0.39.1
-networkx==3.0
+networkx
 numba==0.56.4
 numpy==1.23.5
 packaging==23.0
