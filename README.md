@@ -9,3 +9,5 @@ Endpoints
 To run API locally use - uvicorn main:app --reload 
 
 NOTE: API can be tested locally, since Heroku's free services have been terminated.
+
+Special thanks: https://github.com/sedthh/pyxelate 
