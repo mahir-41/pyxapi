@@ -6,8 +6,10 @@ Endpoints
 2) GET - "/pixelate(?url=...)" - Saves a pixel art version of the image in the provided url(in the form of a url parameter).
 3) GET - "/getImage" - Returns the file with the pixel art image.
 
-To run API locally use - uvicorn main:app --reload 
+NOTE: API can be tested locally.
 
-NOTE: API can be tested locally, since Heroku's free services have been terminated.
+Two ways to run API locally: 
+1) step 1: install python dependencies  - step 2: run "uvicorn main:app --reload" command to start fast api server
+2) step 1: docker pull mahir41/pyxapi - step 2: docker run -d -p 80:80 mahir41/pyxapi
 
 Special thanks: https://github.com/sedthh/pyxelate 
