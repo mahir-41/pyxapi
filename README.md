@@ -13,3 +13,7 @@ Two ways to run API locally:
 2) step 1: docker pull mahir41/pyxapi - step 2: docker run -d -p 80:80 mahir41/pyxapi
 
 Special thanks: https://github.com/sedthh/pyxelate 
+
+Demo:
+<img width="547" alt="190949159-270d54d2-9f31-4bf5-977a-6978dca1ea1a" src="https://github.com/mahir-41/pyxapi/assets/28959987/71530f91-b091-4c04-a9b4-b024d2390053">
+
