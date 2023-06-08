@@ -14,6 +14,7 @@ Two ways to run API locally:
 
 Special thanks: https://github.com/sedthh/pyxelate 
 
-Demo: \n
+Demo:
+<br>
 <img width="547" alt="190949159-270d54d2-9f31-4bf5-977a-6978dca1ea1a" src="https://github.com/mahir-41/pyxapi/assets/28959987/71530f91-b091-4c04-a9b4-b024d2390053">
 
